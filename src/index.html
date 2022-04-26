@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport"
     content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-  <title>我的简历</title>
+  <title>黄聪-前端开发</title>
   <style>
     * {
       box-sizing: border-box;
@@ -101,6 +101,11 @@
   <style>
     .projects {}
 
+    .projects >h4{
+      
+      font-size: 64px;
+    }
+
     .projects p {
       color: #666;
     }
@@ -117,6 +122,19 @@
 
     .projects>ol>li {
       margin-bottom: 24px;
+    }
+    .projects>ol>li>h4{
+      font-weight: bold;
+    }
+
+    .projects>ol>li>ul{
+      list-style:disc;
+      margin-top: 8px;
+      margin-left: 24px;
+    }
+    .projects>ol>li>ul>li{
+      margin-top: 4px;
+      margin-bottom: 4px;
     }
 
     .projects>ol>li>img{
@@ -149,6 +167,7 @@
     .skills>.wrapper {
       display: flex;
       justify-content: space-between;
+      margin-left: 22px;
     }
 
     .skills>.wrapper>:first-child {
@@ -159,6 +178,7 @@
 
     .skills>.wrapper>ul {
       color: #666;
+      list-style:disc;
     }
 
     .skills>.wrapper strong {
@@ -270,51 +290,12 @@
       <h1>黄聪</h1>
       <img src="./images/jl.png" alt="" width="85" height="105">
       <p>
-        黄聪 | 23岁 | 前端开发工程师 | 武汉
+        黄聪 | 23岁 | 前端开发工程师
       </p>
       <p>
         手机（微信）：18770607445 | 邮箱：2323425271@qq.com
       </p>
     </section>
-
-
-
-
-
-
-    <section class="projects">
-      <h2>项目经历</h2>
-      <ol>
-        <li>
-          <header>
-            <h3>汇财宝记账</h3>
-          </header>
-          <p>
-            <br>
-            扫描二维码预览:
-          </p>
-          <img src="https://pic2.zhimg.com/80/v2-3ef09e9599e86132cabd91156596f515_720w.jpg" alt="" height="150" width="150">          
-          <p>
-            该项目是一个基于 <strong>React</strong> / <strong>TypeScript</strong> 实现的移动端单页面记账应用。
-          </p>
-
-          <p>
-            该记账应用能够实现快速记账，能够按日期查看自己的支出/收入记录。
-          </p>
-          <p>
-            应用实现时需要封装 <strong>React Hooks API</strong>，让我对 Hooks 有了更深刻的理解和应用，并将之总结在个人博客中。
-          </p>
-          <span>
-            <a href="">源码私有</a>
-            <a href="https://wind2song.github.io/morney-1-website/#/money">作品预览</a>
-            <a href="https://zhuanlan.zhihu.com/p/474324126">作品笔记</a>
-          </span>
-        </li>
-      </ol>
-    </section>
-
-
-
 
 
     <section class="skills">
@@ -324,8 +305,7 @@
         <ul>
           <li>熟悉HTML5+CSS3+JavaScript技术，页面制作技巧，能将设计稿<strong>完美还原</strong> </li>
           <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
-          <li>熟练掌握<strong>框架 React</strong>的使用，包括 create-react-app、ReactRouter、Redux 等</li>
-          <li>熟练掌握<strong>框架 Vue</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+          <li>熟练掌握框架<strong> React</strong>/<strong> Vue</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
           <li>熟悉 ES6，包括 let / const / Promise / 析构 等</li>
           <li>了解 <strong>TypeScript</strong> 的使用，汇财宝记账项目就是 TS 实现的</li>
           <li>了解 <strong>构建工具Webpack 的配置和优化</strong></li>
@@ -335,9 +315,74 @@
 
 
 
+    <section class="projects">
+      <h2>项目经历</h2>
+      <hr>
+      <ol>
+        <li>
+          <header>
+            <h3>汇财宝记账</h3>
+          </header>
+          <br>
+          <h4>项目预览：</h4>
+          <p>请使用手机浏览器扫码预览</p>
+          <img src="https://pic2.zhimg.com/80/v2-3ef09e9599e86132cabd91156596f515_720w.jpg" alt="" height="150" width="150">
+          <h4>项目描述：</h4>          
+          <p>
+            该项目是一个基于 <strong>React</strong> / <strong>TypeScript</strong> 实现的移动端单页面记账应用。
+          </p>
+
+          <p>
+            该记账应用能够实现快速记账，能够按日期查看自己的支出/收入记录。
+          </p>
+          <p>
+            应用实现时使用了自己封装的 <strong>React Hooks API</strong>进行数据管理。
+          </p>
+          <span>
+            <a href="">源码私有</a>
+            <a href="https://zhuanlan.zhihu.com/p/474324126">作品笔记</a>
+          </span>
+        </li>
+        <li>
+          <header>
+            <h3>源 UI —— 一个从零开始的UI 组件库</h3>
+          </header>
+          <br>
+          <h4>项目描述：</h4>
+          <p>这是一个 <strong>Vue 3</strong> + <strong> TS</strong> 的 UI 库，涵盖了 Switch、Dialog、MessagePopUp、Tabs、Button 等常见 UI 组件。 </p>
+          <p>深入研究 Vue 3，使用了 setup、onMounted、 ref、computed 等 Composition API。 </p>
+          <br>
+          <h4>主要工作：</h4>
+          <ul>
+            <li>
+              所有组件使用 Vue 3 + TypeScript + SCSS 实现
+            </li>
+            <li>
+              使用Vite + VueRouter制作组件官方文档
+            </li>
+            <li>
+              统一打包、发布到npm，流程化
+            </li>
+          </ul>
+          <span>
+            <a href="https://wind2song.github.io/source-ui-website/index.html#/">官方文档</a>
+          </span>
+        </li>
+      </ol>
+    </section>
+
+
+
+
+
+
+
+
+
     <section class="openSource">
       <h2>开源项目</h2>
       <ul>
+
         <li>
           <header>
             <h3>掘进——网址导航站点</h3>
@@ -346,10 +391,9 @@
               <a href="https://wind2song.github.io/nav-1/dist/index.html">项目预览</a>
             </span>
           </header>
-          <p>基于jQuery / LocalStorage / SVG / 媒体查询 / git&GitHub 的导航网站，</p>
-          <p>可以根据自己需求增删网址标签，通过标签快捷访问，实现访问键盘快速访问。</p>
+          <p>可以根据自己需求增删网址标签，通过标签快捷访问，实现访问键盘快捷访问。</p>
         </li>
-        <li class="page2">
+        <li>
           <header>
             <h3>皮卡丘</h3>
             <span>
@@ -358,16 +402,6 @@
             </span>
           </header>
           <p>学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品——还原皮卡丘</p>
-        </li>
-        <li>
-          <header>
-            <h3>myCanvas简易画板</h3>
-            <span>
-              <a href="https://github.com/Wind2Song/myCanvas/blob/main/index.html">源码链接</a>
-              <a href="https://wind2song.github.io/myCanvas/index.html">项目预览</a>
-            </span>
-          </header>
-          <p>学习 <strong>Canvas</strong> 时做的一个小作品</p>
         </li>
       </ul>
     </section>
@@ -385,7 +419,7 @@
           </header>
           <ul>
             <li>
-              制造业的工作经历有必要写吗？
+              
             </li>
           </ul>
         </li>

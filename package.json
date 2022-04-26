@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "cssnano": "^4.1.10"
+  },
+  "scripts": {
+    "deploy":"sh src/deploy.sh"
   }
 }
